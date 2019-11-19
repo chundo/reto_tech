@@ -34,11 +34,11 @@ rails g scaffold City name code description:text state:references active:boolean
 
 rails g migration AddPhoneToUser phone name city:references #OK
 
-rails g scaffold Status name code description:text active:boolean #OK
+rails g scaffold Sale value:integer sale_type user:references active:boolean #OK
 
-rails g scaffold Sale value sale_type user:references active:boolean #OK
+# rails d scaffold OrderStatu name code description:text active:boolean #OK 
 
-rails g scaffold Order user:references total:integer sub_total:integer taxes:integer statu:references note:text active:boolean
+rails g scaffold Order user:references total:integer sub_total:integer taxes:integer statu note:text active:boolean
 
 rails g scaffold OrderDetails order:references product:references price:integer image
 

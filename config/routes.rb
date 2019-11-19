@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :order_details
   resources :sales
-  resources :statuses
+  resources :orders
   resources :cities
   devise_for :users
   resources :products
