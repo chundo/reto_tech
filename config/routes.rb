@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :sales
+  resources :statuses
   resources :cities
   devise_for :users
   resources :products
