@@ -1,5 +1,6 @@
 class ProductCategoriesController < ApplicationController
   before_action :set_product_category, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /product_categories
   # GET /product_categories.json

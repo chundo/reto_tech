@@ -30,6 +30,7 @@ rails g scaffold ProductCategory name description:text active:boolean
 
 rails g scaffold Product name product_category:references description:text price:integer image active:boolean
 
+
 rails g migration AddPhoneToUser phone name city
 
 rails g scaffold Status name description:text active:boolean
