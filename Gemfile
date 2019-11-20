@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 gem 'devise'
+gem 'activeadmin'
+
 
 ruby '2.6.1'
 
