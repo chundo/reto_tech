@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  namespace :api, defaults: { format: :json } do
+    namespace :v1, defaults: { format: :json } do
+      get 'cart/:user/:name' => 'products#cart'
+      #get 'cart' => 'products#cart'
+    end
+  end
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :order_details
