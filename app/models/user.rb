@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   belongs_to :city, optional: true
+  has_many :orders
 
   before_create :build_user
   def build_user
